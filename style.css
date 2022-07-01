@@ -1,0 +1,15 @@
+#main-heading {
+  color: rgba(0, 204, 240, 0.866);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+input:invalid {
+  background-color: rgba(255, 0, 43, 0.937);
+}

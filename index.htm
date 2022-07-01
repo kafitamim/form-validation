@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="main-heading" style="color: #3d0005">Sign Up Form</h1>
+    <form novalidate>
+      <div class="form-row align-items-center">
+        <div class="col-auto">
+          <label class="sr-only" for="nameInput">Name</label>
+          <input
+            type="text"
+            class="form-control mb-2"
+            id="inputName"
+            placeholder="Name"
+          />
+        </div>
+        <div class="col-auto">
+          <label class="sr-only" for="inlineFormInputGroup">Username</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              id="inputUserName"
+              placeholder="Username"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- another section -->
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputPhoneNumber">Phone number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPhoneNumber"
+            placeholder="Phone number"
+          />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            placeholder="Email"
+          />
+        </div>
+      </div>
+      <div class="form-group form-inline">
+        <label for="inputPassword">Password</label>
+        <!-- <input type="text" id="inputPassword" class="form-control mx-sm-3" /> -->
+        <input type="text" id="inputPassword" class="form-control mx-sm-3" />
+        <br />
+        <br />
+        <!-- <div class="row">
+          <div class="col-sm-12"> -->
+        <button type="secondary" class="btn btn-secondary" id="copyPassword">
+          Copy Password
+        </button>
+        &nbsp;&nbsp;
+        <button
+          type="secondary"
+          class="btn btn-secondary"
+          id="generatePassword"
+        >
+          Password Generator
+        </button>
+        <!-- </div>
+        </div> -->
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="websiteURL">Website URL</label>
+          <input
+            type="text"
+            class="form-control"
+            id="websiteURL"
+            placeholder="URL"
+          />
+        </div>
+      </div>
+      <div>
+        <button type="submit" id="submitButton" class="btn btn-primary">
+          Sign up
+        </button>
+      </div>
+    </form>
+    <script src="./main.js"></script>
+  </body>
+</html>
